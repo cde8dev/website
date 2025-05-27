@@ -1,0 +1,29 @@
+{
+  "name": "code8-website",
+  "version": "1.0.0",
+  "description": "Code 8 - Blockchain Development & Advisory Excellence",
+  "main": "index.html",
+  "scripts": {
+    "dev": "live-server --port=3000 --host=localhost",
+    "build": "echo 'Building static site...' && npm run minify",
+    "minify": "echo 'Minifying assets...'",
+    "deploy": "echo 'Deploy to production'",
+    "lint": "echo 'Linting code...'",
+    "test": "echo 'Running tests...'"
+  },
+  "keywords": [
+    "blockchain",
+    "rust",
+    "zig",
+    "defi",
+    "smart-contracts",
+    "cryptocurrency",
+    "advisory",
+    "development"
+  ],
+  "author": "Boy Maas <boy.maas@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "live-server": "^1.2.2"
+  }
+}
