@@ -79,6 +79,12 @@ body {
 .nav-brand {
     display: flex;
     flex-direction: column;
+    text-decoration: none;
+    transition: opacity 0.3s ease;
+}
+
+.nav-brand:hover {
+    opacity: 0.8;
 }
 
 .brand-text {
@@ -2178,6 +2184,31 @@ body {
     gap: var(--space-2xl);
 }
 
+.contact-single {
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.contact-single > h2 {
+    margin-bottom: var(--space-sm);
+}
+
+.contact-single > p {
+    font-size: 1.125rem;
+    color: var(--gray);
+    margin-bottom: var(--space-xl);
+}
+
+.contact-single .contact-card {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: var(--space-xl);
+    text-align: left;
+    max-width: 900px;
+    margin: 0 auto;
+}
+
 .contact-form-section h2 {
     color: var(--accent-primary);
     margin-bottom: var(--space-md);
@@ -2704,7 +2735,8 @@ body {
 
 /* CTA Sections */
 .expertise-cta,
-.about-cta {
+.about-cta,
+.contact-cta {
     padding: var(--space-2xl) 0;
     text-align: center;
 }
@@ -2713,20 +2745,23 @@ body {
     background: var(--bg-secondary);
 }
 
-.about-cta {
+.about-cta,
+.contact-cta {
     background: var(--bg-primary);
     border-top: 1px solid var(--bg-tertiary);
 }
 
 .expertise-cta h2,
-.about-cta h2 {
+.about-cta h2,
+.contact-cta h2 {
     font-size: 2.5rem;
     margin-bottom: var(--space-md);
     color: var(--text-primary);
 }
 
 .expertise-cta p,
-.about-cta p {
+.about-cta p,
+.contact-cta p {
     font-size: 1.2rem;
     color: var(--text-secondary);
     margin-bottom: var(--space-xl);

@@ -6,49 +6,53 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 Code 8 is a professional business website for blockchain development and advisory services. The site showcases expertise in Rust, Zig, and blockchain technologies with a focus on high-performance systems and security.
 
+## Development Commands
+
+```bash
+# Install dependencies (required before first run)
+npm install
+
+# Start development server on http://localhost:3000
+npm run dev
+
+# Build for production (currently placeholder - no actual minification)
+npm run build
+
+# Lint code (currently placeholder)
+npm run lint
+
+# Run tests (currently placeholder)
+npm run test
+```
+
 ## Architecture
 
 ### Technology Stack
 - **Frontend**: Vanilla HTML5, CSS3, JavaScript (ES6+)
 - **Styling**: Custom CSS with CSS variables for theming
-- **Build**: Static site with npm scripts for development
-- **Fonts**: Google Fonts (JetBrains Mono, Inter)
+- **Build**: Static site with live-server for development
+- **Dependencies**: Minimal (only live-server for dev)
+- **No Framework**: Pure vanilla implementation for performance
 
-### File Structure
-```
-/
-├── index.html          # Homepage with hero section and overview
-├── services.html       # Detailed services breakdown
-├── expertise.html      # Technical skills and proficiency
-├── portfolio.html      # Case studies and project showcases
-├── about.html         # Personal philosophy and background
-├── contact.html       # Contact form and engagement options
-├── styles/
-│   └── main.css       # Complete stylesheet with responsive design
-├── scripts/
-│   ├── main.js        # Core functionality and navigation
-│   └── contact.js     # Contact form handling
-└── package.json       # Project configuration and scripts
-```
+### JavaScript Architecture
+- **Modular Structure**: Separated by concern (main.js for global, contact.js for forms)
+- **Event-Driven**: DOM manipulation with event delegation
+- **Performance**: Intersection Observer for lazy animations
+- **State Management**: DOM-based using CSS classes (.active, .visible)
+- **No Build Process**: Direct ES6+ modules, no transpilation
 
-## Development Commands
+### CSS Architecture  
+- **Single Stylesheet**: All styles in main.css for simplicity
+- **CSS Variables**: Consistent theming via custom properties
+- **Mobile-First**: Breakpoint at 768px
+- **BEM-like Naming**: Component-based class names
+- **Advanced Effects**: Gradients, animations, backdrop-filter
 
-```bash
-# Install dependencies
-npm install
-
-# Start development server
-npm run dev
-
-# Build for production
-npm run build
-
-# Lint code
-npm run lint
-
-# Run tests
-npm run test
-```
+### Cross-File Relationships
+- **Global Scripts**: main.js loaded on every page for navigation
+- **Page-Specific**: contact.js only on contact.html
+- **Form Handling**: Client-side validation with mailto: fallback (no backend)
+- **Font Loading**: Google Fonts CDN (JetBrains Mono, Inter)
 
 ## Design System
 
