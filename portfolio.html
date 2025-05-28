@@ -63,135 +63,75 @@
             <div class="container">
                 <h2 class="section-title">Featured Projects</h2>
                 
-                <!-- Project 1: 15,000-Node Consensus Network -->
-                <div class="project-showcase">
-                    <div class="project-content">
-                        <div class="project-badge">Featured Achievement</div>
-                        <h3>15,000-Node Global Consensus Network</h3>
-                        <p class="project-summary">Engineered a revolutionary consensus system achieving sub-2-second global finality across 15,000+ nodes using custom Rust implementation and libp2p transport layer.</p>
+                <div class="projects-grid">
+                    <!-- Project 1: 15,000-Node Consensus Network -->
+                    <div class="project-card featured">
+                        <div class="project-header">
+                            <div class="project-badge">Featured Achievement</div>
+                            <h3>15,000-Node Global Consensus Network</h3>
+                            <p class="project-summary">Revolutionary consensus system achieving sub-2-second global finality across 15,000+ nodes using custom Rust implementation.</p>
+                        </div>
+                        
+                        <div class="project-stats">
+                            <div class="stat-item">
+                                <span class="stat-number">1.7s</span>
+                                <span class="stat-label">Finality Time</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">15,127</span>
+                                <span class="stat-label">Peak Nodes</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">99.9%</span>
+                                <span class="stat-label">Uptime</span>
+                            </div>
+                        </div>
                         
                         <div class="project-details">
-                            <div class="detail-section">
-                                <h4>🎯 Challenge</h4>
-                                <p>Design a consensus protocol capable of achieving fast finality across a massive global network while maintaining Byzantine fault tolerance and optimal performance.</p>
-                            </div>
-                            
-                            <div class="detail-section">
-                                <h4>⚡ Solution</h4>
+                            <div class="project-section">
+                                <h4>Key Innovations</h4>
                                 <ul>
-                                    <li>Custom consensus algorithm optimized for large-scale networks</li>
-                                    <li>libp2p transport layer with custom message routing</li>
-                                    <li>Partial IPLD state synchronization for efficient storage</li>
-                                    <li>Advanced peer discovery and network topology optimization</li>
+                                    <li>Custom consensus algorithm for large-scale networks</li>
+                                    <li>libp2p transport layer with optimized routing</li>
+                                    <li>Partial IPLD state synchronization</li>
+                                    <li>Byzantine fault tolerance at scale</li>
                                 </ul>
-                            </div>
-                            
-                            <div class="detail-section">
-                                <h4>📈 Results</h4>
-                                <div class="results-grid">
-                                    <div class="result-metric">
-                                        <span class="metric-value">1.7s</span>
-                                        <span class="metric-label">Average Finality Time</span>
-                                    </div>
-                                    <div class="result-metric">
-                                        <span class="metric-value">15,127</span>
-                                        <span class="metric-label">Peak Node Count</span>
-                                    </div>
-                                    <div class="result-metric">
-                                        <span class="metric-value">99.9%</span>
-                                        <span class="metric-label">Network Uptime</span>
-                                    </div>
-                                    <div class="result-metric">
-                                        <span class="metric-value">0</span>
-                                        <span class="metric-label">Security Incidents</span>
-                                    </div>
-                                </div>
                             </div>
                         </div>
                         
                         <div class="project-tech">
                             <span class="tech-tag primary">Rust</span>
                             <span class="tech-tag">libp2p</span>
-                            <span class="tech-tag">Custom Consensus</span>
+                            <span class="tech-tag">Consensus</span>
                             <span class="tech-tag">IPLD</span>
-                            <span class="tech-tag">Byzantine Fault Tolerance</span>
                         </div>
                     </div>
-                    
-                    <div class="project-visual">
-                        <div class="consensus-visualization">
-                            <div class="network-topology">
-                                <div class="node-cluster">
-                                    <div class="region-label">North America</div>
-                                    <div class="nodes">
-                                        <div class="node active"></div>
-                                        <div class="node active"></div>
-                                        <div class="node active"></div>
-                                        <div class="node active"></div>
-                                    </div>
-                                </div>
-                                <div class="node-cluster">
-                                    <div class="region-label">Europe</div>
-                                    <div class="nodes">
-                                        <div class="node active"></div>
-                                        <div class="node active"></div>
-                                        <div class="node active"></div>
-                                        <div class="node active"></div>
-                                    </div>
-                                </div>
-                                <div class="node-cluster">
-                                    <div class="region-label">Asia-Pacific</div>
-                                    <div class="nodes">
-                                        <div class="node active"></div>
-                                        <div class="node active"></div>
-                                        <div class="node active"></div>
-                                        <div class="node active"></div>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="consensus-flow">
-                                <div class="flow-step">
-                                    <span class="step-number">1</span>
-                                    <span class="step-label">Proposal</span>
-                                </div>
-                                <div class="flow-arrow">→</div>
-                                <div class="flow-step">
-                                    <span class="step-number">2</span>
-                                    <span class="step-label">Validation</span>
-                                </div>
-                                <div class="flow-arrow">→</div>
-                                <div class="flow-step">
-                                    <span class="step-number">3</span>
-                                    <span class="step-label">Consensus</span>
-                                </div>
-                                <div class="flow-arrow">→</div>
-                                <div class="flow-step active">
-                                    <span class="step-number">✓</span>
-                                    <span class="step-label">Finality</span>
-                                </div>
-                            </div>
-                            <div class="finality-timer">
-                                <span class="timer-label">Global Finality:</span>
-                                <span class="timer-value">1.7s</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
 
-                <!-- Project 2: High-Performance Ethereum Arbitrage -->
-                <div class="project-showcase">
-                    <div class="project-content">
-                        <h3>High-Performance Ethereum Arbitrage System</h3>
-                        <p class="project-summary">Developed a sophisticated arbitrage system with custom P2P mempool monitoring, competing against advanced MEV bots in the Ethereum ecosystem.</p>
+                    <!-- Project 2: High-Performance Ethereum Arbitrage -->
+                    <div class="project-card">
+                        <div class="project-header">
+                            <h3>High-Performance Ethereum Arbitrage System</h3>
+                            <p class="project-summary">Sophisticated arbitrage system with custom P2P mempool monitoring, competing against advanced MEV bots in the Ethereum ecosystem.</p>
+                        </div>
+                        
+                        <div class="project-stats">
+                            <div class="stat-item">
+                                <span class="stat-number">&lt;100ms</span>
+                                <span class="stat-label">Detection Speed</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">85%</span>
+                                <span class="stat-label">Success Rate</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">40%</span>
+                                <span class="stat-label">Gas Savings</span>
+                            </div>
+                        </div>
                         
                         <div class="project-details">
-                            <div class="detail-section">
-                                <h4>🎯 Challenge</h4>
-                                <p>Build a competitive arbitrage system capable of detecting and executing profitable opportunities faster than sophisticated MEV bots while maintaining profitability in a highly competitive environment.</p>
-                            </div>
-                            
-                            <div class="detail-section">
-                                <h4>⚡ Solution</h4>
+                            <div class="project-section">
+                                <h4>Key Features</h4>
                                 <ul>
                                     <li>Custom P2P client for real-time mempool monitoring</li>
                                     <li>Advanced opportunity detection algorithms</li>
@@ -199,85 +139,41 @@
                                     <li>Flash loan integration for capital efficiency</li>
                                 </ul>
                             </div>
-                            
-                            <div class="detail-section">
-                                <h4>📈 Results</h4>
-                                <div class="results-grid">
-                                    <div class="result-metric">
-                                        <span class="metric-value">&lt;100ms</span>
-                                        <span class="metric-label">Opportunity Detection</span>
-                                    </div>
-                                    <div class="result-metric">
-                                        <span class="metric-value">85%</span>
-                                        <span class="metric-label">Success Rate</span>
-                                    </div>
-                                    <div class="result-metric">
-                                        <span class="metric-value">40%</span>
-                                        <span class="metric-label">Gas Savings</span>
-                                    </div>
-                                    <div class="result-metric">
-                                        <span class="metric-value">$50K+</span>
-                                        <span class="metric-label">Monthly Volume</span>
-                                    </div>
-                                </div>
-                            </div>
                         </div>
                         
                         <div class="project-tech">
                             <span class="tech-tag primary">Rust</span>
                             <span class="tech-tag">Solidity</span>
-                            <span class="tech-tag">Yul Assembly</span>
+                            <span class="tech-tag">Yul</span>
                             <span class="tech-tag">MEV</span>
-                            <span class="tech-tag">Flash Loans</span>
                         </div>
                     </div>
-                    
-                    <div class="project-visual">
-                        <div class="arbitrage-visualization">
-                            <div class="mempool-monitor">
-                                <div class="monitor-header">Mempool Monitor</div>
-                                <div class="transaction-stream">
-                                    <div class="tx-item">
-                                        <span class="tx-hash">0x1a2b...</span>
-                                        <span class="tx-opportunity">+2.3 ETH</span>
-                                    </div>
-                                    <div class="tx-item">
-                                        <span class="tx-hash">0x3c4d...</span>
-                                        <span class="tx-opportunity">+0.8 ETH</span>
-                                    </div>
-                                    <div class="tx-item highlighted">
-                                        <span class="tx-hash">0x5e6f...</span>
-                                        <span class="tx-opportunity">+5.7 ETH</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="execution-flow">
-                                <div class="flow-step">Detect</div>
-                                <div class="flow-arrow">→</div>
-                                <div class="flow-step">Calculate</div>
-                                <div class="flow-arrow">→</div>
-                                <div class="flow-step">Execute</div>
-                                <div class="flow-arrow">→</div>
-                                <div class="flow-step active">Profit</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
 
-                <!-- Project 3: JAM Protocol Implementation -->
-                <div class="project-showcase">
-                    <div class="project-content">
-                        <h3>JAM Protocol Implementation (JamZig)</h3>
-                        <p class="project-summary">RISC-V Virtual Machine implementation in Zig for the JAM Protocol, featuring cryptographic primitives integration and scalable data availability layer.</p>
+                    <!-- Project 3: JAM Protocol Implementation -->
+                    <div class="project-card">
+                        <div class="project-header">
+                            <h3>JAM Protocol Implementation (JamZig)</h3>
+                            <p class="project-summary">RISC-V Virtual Machine implementation in Zig for next-generation blockchain protocols with focus on performance and correctness.</p>
+                        </div>
+                        
+                        <div class="project-stats">
+                            <div class="stat-item">
+                                <span class="stat-number">100%</span>
+                                <span class="stat-label">RISC-V Compliance</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">3x</span>
+                                <span class="stat-label">Performance Gain</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">2MB</span>
+                                <span class="stat-label">Binary Size</span>
+                            </div>
+                        </div>
                         
                         <div class="project-details">
-                            <div class="detail-section">
-                                <h4>🎯 Challenge</h4>
-                                <p>Implement a high-performance RISC-V virtual machine for next-generation blockchain protocols with focus on performance and correctness.</p>
-                            </div>
-                            
-                            <div class="detail-section">
-                                <h4>⚡ Solution</h4>
+                            <div class="project-section">
+                                <h4>Implementation Highlights</h4>
                                 <ul>
                                     <li>Complete RISC-V instruction set implementation</li>
                                     <li>Integrated cryptographic primitive support</li>
@@ -285,86 +181,41 @@
                                     <li>Optimized state machine design</li>
                                 </ul>
                             </div>
-                            
-                            <div class="detail-section">
-                                <h4>📈 Results</h4>
-                                <div class="results-grid">
-                                    <div class="result-metric">
-                                        <span class="metric-value">100%</span>
-                                        <span class="metric-label">RISC-V Compliance</span>
-                                    </div>
-                                    <div class="result-metric">
-                                        <span class="metric-value">3x</span>
-                                        <span class="metric-label">Performance Gain</span>
-                                    </div>
-                                    <div class="result-metric">
-                                        <span class="metric-value">0</span>
-                                        <span class="metric-label">Memory Vulnerabilities</span>
-                                    </div>
-                                    <div class="result-metric">
-                                        <span class="metric-value">2MB</span>
-                                        <span class="metric-label">Binary Size</span>
-                                    </div>
-                                </div>
-                            </div>
                         </div>
                         
                         <div class="project-tech">
                             <span class="tech-tag primary">Zig</span>
                             <span class="tech-tag">RISC-V</span>
                             <span class="tech-tag">Cryptography</span>
-                            <span class="tech-tag">Virtual Machine</span>
-                            <span class="tech-tag">JAM Protocol</span>
+                            <span class="tech-tag">JAM</span>
                         </div>
                     </div>
-                    
-                    <div class="project-visual">
-                        <div class="vm-visualization">
-                            <div class="instruction-pipeline">
-                                <div class="pipeline-stage">
-                                    <div class="stage-label">Fetch</div>
-                                    <div class="stage-content">0x12345678</div>
-                                </div>
-                                <div class="pipeline-stage">
-                                    <div class="stage-label">Decode</div>
-                                    <div class="stage-content">ADD x1, x2, x3</div>
-                                </div>
-                                <div class="pipeline-stage">
-                                    <div class="stage-label">Execute</div>
-                                    <div class="stage-content">ALU Operation</div>
-                                </div>
-                                <div class="pipeline-stage">
-                                    <div class="stage-label">Writeback</div>
-                                    <div class="stage-content">Register x1</div>
-                                </div>
-                            </div>
-                            <div class="register-bank">
-                                <div class="register-label">RISC-V Registers</div>
-                                <div class="registers">
-                                    <div class="register">x0: 0x00000000</div>
-                                    <div class="register">x1: 0x12345678</div>
-                                    <div class="register">x2: 0xABCDEF00</div>
-                                    <div class="register active">x3: 0x87654321</div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
 
-                <!-- Project 4: Hubble Protocol Security -->
-                <div class="project-showcase">
-                    <div class="project-content">
-                        <h3>Hubble Protocol Security Validation</h3>
-                        <p class="project-summary">Comprehensive security validation for Hubble Protocol using native Solana runtime fuzzing, smart contract security analysis, and performance optimization.</p>
+                    <!-- Project 4: Hubble Protocol Security -->
+                    <div class="project-card">
+                        <div class="project-header">
+                            <h3>Hubble Protocol Security Validation</h3>
+                            <p class="project-summary">Comprehensive security validation for Hubble Protocol using native Solana runtime fuzzing and smart contract analysis.</p>
+                        </div>
+                        
+                        <div class="project-stats">
+                            <div class="stat-item">
+                                <span class="stat-number">0</span>
+                                <span class="stat-label">Critical Issues</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">100%</span>
+                                <span class="stat-label">Test Coverage</span>
+                            </div>
+                            <div class="stat-item">
+                                <span class="stat-number">25%</span>
+                                <span class="stat-label">Performance Gain</span>
+                            </div>
+                        </div>
                         
                         <div class="project-details">
-                            <div class="detail-section">
-                                <h4>🎯 Challenge</h4>
-                                <p>Ensure the security and reliability of a complex DeFi protocol built on Solana through comprehensive testing and validation.</p>
-                            </div>
-                            
-                            <div class="detail-section">
-                                <h4>⚡ Solution</h4>
+                            <div class="project-section">
+                                <h4>Security Approach</h4>
                                 <ul>
                                     <li>Native Solana runtime fuzzing with honggfuzz</li>
                                     <li>Smart contract security auditing</li>
@@ -372,64 +223,13 @@
                                     <li>Performance optimization and monitoring</li>
                                 </ul>
                             </div>
-                            
-                            <div class="detail-section">
-                                <h4>📈 Results</h4>
-                                <div class="results-grid">
-                                    <div class="result-metric">
-                                        <span class="metric-value">0</span>
-                                        <span class="metric-label">Critical Vulnerabilities</span>
-                                    </div>
-                                    <div class="result-metric">
-                                        <span class="metric-value">15</span>
-                                        <span class="metric-label">Issues Identified</span>
-                                    </div>
-                                    <div class="result-metric">
-                                        <span class="metric-value">100%</span>
-                                        <span class="metric-label">Coverage Achieved</span>
-                                    </div>
-                                    <div class="result-metric">
-                                        <span class="metric-value">25%</span>
-                                        <span class="metric-label">Performance Improvement</span>
-                                    </div>
-                                </div>
-                            </div>
                         </div>
                         
                         <div class="project-tech">
                             <span class="tech-tag primary">Rust</span>
                             <span class="tech-tag">Solana</span>
                             <span class="tech-tag">honggfuzz</span>
-                            <span class="tech-tag">Security Audit</span>
-                            <span class="tech-tag">DeFi</span>
-                        </div>
-                    </div>
-                    
-                    <div class="project-visual">
-                        <div class="security-visualization">
-                            <div class="fuzzing-dashboard">
-                                <div class="dashboard-header">Fuzzing Dashboard</div>
-                                <div class="fuzzing-stats">
-                                    <div class="stat-item">
-                                        <span class="stat-value">2.5M</span>
-                                        <span class="stat-label">Test Cases</span>
-                                    </div>
-                                    <div class="stat-item">
-                                        <span class="stat-value">98.7%</span>
-                                        <span class="stat-label">Coverage</span>
-                                    </div>
-                                    <div class="stat-item">
-                                        <span class="stat-value">0</span>
-                                        <span class="stat-label">Crashes</span>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="security-status">
-                                <div class="status-indicator success">
-                                    <span class="status-icon">✓</span>
-                                    <span class="status-text">Security Validated</span>
-                                </div>
-                            </div>
+                            <span class="tech-tag">Security</span>
                         </div>
                     </div>
                 </div>
