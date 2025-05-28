@@ -6,6 +6,8 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 Code 8 is a professional business website for blockchain development and advisory services. The site showcases expertise in Rust, Zig, and blockchain technologies with a focus on high-performance systems and security.
 
+- The domain this is published on is cd8.dev
+
 ## Development Commands
 
 ```bash
@@ -132,5 +134,8 @@ npm run test
 - Confident without being arrogant
 - Results-focused with specific metrics
 - Professional with personality
+
+## Workflow Guidance
+- Never attribute CLAUDE for anything, especially when generating commit messages
 
 When making changes to this website, maintain the technical credibility while ensuring the site remains accessible to potential clients who may not have deep technical knowledge.
