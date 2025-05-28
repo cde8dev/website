@@ -151,9 +151,20 @@ body {
     display: flex;
     align-items: center;
     padding-top: 70px;
-    background: linear-gradient(135deg, var(--bg-primary) 0%, #1a1a2e  100%);
+    background: transparent;
     position: relative;
     overflow: hidden;
+}
+
+/* WebGL Shader Canvas */
+.hero-shader-canvas {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+    background: var(--bg-primary);
 }
 
 .hero::before {
@@ -163,8 +174,9 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grid" width="10" height="10" patternUnits="userSpaceOnUse"><path d="M 10 0 L 0 0 0 10" fill="none" stroke="%23333" stroke-width="0.5"/></pattern></defs><rect width="100" height="100" fill="url(%23grid)"/></svg>');
-    opacity: 0.1;
+    background: radial-gradient(ellipse at center, transparent 0%, rgba(10, 10, 10, 0.5) 40%, rgba(10, 10, 10, 0.9) 100%);
+    z-index: 1;
+    pointer-events: none;
 }
 
 .hero .container {
@@ -173,7 +185,7 @@ body {
     gap: var(--space-2xl);
     align-items: center;
     position: relative;
-    z-index: 1;
+    z-index: 2;
 }
 
 .hero-title {
