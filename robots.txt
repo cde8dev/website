@@ -1,0 +1,8 @@
+# Code 8 - cd8.dev robots.txt
+# Allow all web crawlers
+
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://cd8.dev/sitemap.xml
